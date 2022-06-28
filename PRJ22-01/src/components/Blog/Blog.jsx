@@ -65,12 +65,13 @@ export default function Blog() {
 
                      <div className="col-md-4" style={{padding:'30px'}}>
                  <div>
-                 <img src={Blog9} className="w-100 border-bottom" alt="Blog"/>
+                
                      <div className="card-body">
                         <h6 style={{padding:'5px',color:'#8A8A8A'}}>SMART INVESTING</h6>
                         <div className="underline"></div>
                         <Link className="onClick" to="/should-one-run-after-returns-or-save-more-whats-important/" rel="bookmark"><h4>Should one run after<br/> ”RETURNS” or Save more.. <br/>What’s important?</h4></Link>
                         <div style={{color:'#A9ADB1'}}><i class="bi bi-watch"></i>  July 29,2021 <i class="bi bi-chat"></i>  0</div>
+                        <img src={Blog9} className="w-100 border-bottom" alt="Blog"/>
                         </div>
                      </div>
                      </div>
@@ -147,20 +148,26 @@ export default function Blog() {
 </section>
 
  {/* pagination - bootstrap */}
-<nav aria-label="Page navigation example">
+ <div style={{padding:'70px'}}>
+ <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
-    <li class="page-item disabled">
-    <a class="page-link" href="http://localhost:3000/blog" tabindex="-1"><i class="bi bi-arrow-left"></i></a>
-    </li>
-    <li class="page-item"><a class="page-link" href="http://localhost:3000/blog">1</a></li>
-    
-    <li class="page-item"><a class="page-link" href="">2</a></li>
-    <li class="page-item"><a class="page-link" href="">3</a></li>
-    <li class="page-item">
-    <a class="page-link" href="http://localhost:3000/careers"><i class="bi bi-arrow-right"></i></a>
-    </li>
+    <li class="page-item"><Link class="onClick"to="/blog/" >   </Link></li>
+    <li class="page-item"><Link class="onClick"to="/blog/page/2/" >2</Link></li>
+    <li class="page-item"><Link class="onClick"to="/blog/page/3/" >3</Link></li>
+    <li class="page-item"><Link class="onClick"to="/blog/page/2/" ><i class="bi bi-arrow-right"></i></Link></li>
   </ul>
 </nav>
+</div>
+{/* <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class=""><a class="" href="http://localhost:3000/blog">1</a></li>
+    <li class=""><a class="" href="http://localhost:3000/blog/page/2/">2</a></li>
+    <li class=""><a class="" href="http://localhost:3000/blog/page/3/">3</a></li>
+  </ul>
+</nav> */}
+
+
+
    </div>
   )
 }

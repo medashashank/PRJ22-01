@@ -12,6 +12,14 @@ import Education from '../Education/Education';
 import Post1 from '../Blog/Post1.jsx'
 import Post2 from '../Blog/Post2.jsx'
 import Post3 from '../Blog/Post3.jsx'
+import Post4 from '../Blog/Post4.jsx'
+import Post5 from '../Blog/Post5.jsx'
+import Post6 from '../Blog/Post6.jsx'
+import Post7 from '../Blog/Post7.jsx'
+import Post8 from '../Blog/Post8.jsx'
+import Post9 from '../Blog/Post9.jsx'
+import Blogpage2 from '../Blog/Blogpage2.jsx'
+import Blogpage3 from '../Blog/Blogpage3.jsx'
 import './NavBar.module.css'
 
 export default function NavBar() {
@@ -62,6 +70,14 @@ export default function NavBar() {
             <Route path='/why-investment-decision-based-on-large-cap-and-small-cap-is-flawed/' element={<Post1/>}/>
             <Route path='/guardian-capital-what-to-expect-from-your-investments-going-forward/' element={<Post2/>}/>
             <Route path='/5-questions-to-ask-your-wealth-manager/' element={<Post3/>}/>
+            <Route path='/should-one-run-after-returns-or-save-more-whats-important/' element={<Post4/>}/>
+            <Route path='/basic-insurances-for-every-individual/' element={<Post5/>}/>
+            <Route path='/small-cap-funds/' element={<Post6/>}/>
+            <Route path='/work-from-home-version-2-0-guess-whos-backback-again/' element={<Post7/>}/>
+            <Route path='/high-pe-valuations-how-does-it-affect-if-valuations-correct/' element={<Post8/>}/>
+            <Route path='/union-budget-highlights-2021/' element={<Post9/>}/>
+            <Route path='/blog/page/2/' element={<Blogpage2/>}/>
+            <Route path='/blog/page/3/' element={<Blogpage3/>}/>
         </Routes>
   </Router>
   );
